@@ -1,0 +1,38 @@
+{
+  "name": "designxscrum",
+  "version": "1.0.0",
+  "description": "A place for design and Scrum to get along.",
+  "main": "index.js",
+  "scripts": {
+    "dev": "npx @11ty/eleventy --serve",
+    "build": "npx @11ty/eleventy",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/ksmxxxxxx/designxscrum.git"
+  },
+  "keywords": [
+    "design",
+    "scrum",
+    "agile",
+    "UX",
+    "UI",
+    "IA"
+  ],
+  "author": "ksmxxxxxx",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ksmxxxxxx/designxscrum/issues"
+  },
+  "homepage": "https://github.com/ksmxxxxxx/designxscrum#readme",
+  "devDependencies": {
+    "@11ty/eleventy": "^0.12.1",
+    "bulma": "^0.9.3",
+    "eleventy-plugin-sass": "^1.2.0",
+    "eslint": "^7.29.0",
+    "eslint-config-standard": "^16.0.3",
+    "netlify-cli": "^3.38.10",
+    "pug": "^3.0.2"
+  }
+}
