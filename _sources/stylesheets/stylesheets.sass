@@ -1,5 +1,7 @@
 @charset 'utf-8'
 
+@import 'override_bulma'
+
 @import '../../node_modules/bulma/bulma'
 
 @import 'variables'
@@ -8,48 +10,77 @@
 .logo
   padding: 3rem 0 3rem
 
-.content
-  h1, h2, h3
-    text-align: center;
+.page
+  .content
+    margin-bottom: 3rem
+    h1, h2, h3
+      text-align: center;
 
-  h1::after, h2::after, h3::after
-    content: ''
-    display: block
-    margin: 1rem auto 0
-    width: 6rem
-    height: .5rem
-    background: linear-gradient(45deg, $pale_violet, $pale_blue)
-
-  .discord_link
-    a
+    h1::after, h2::after
+      content: ''
       display: block
-      padding: 1rem
-      border-radius: .5rem
-      background: $discord_blue
-      font-size: $size-5
-      font-weight: bold
-      color: #fff
-      text-align: center
-  .member
-    display: flex
-    flex-direction: row
-    align-items: center
-    margin: 0 2rem
-    padding-bottom: 2rem
-    &:last-child
-      padding-bottom: 0
-    .avater
-      margin-right: 0
-      margin-left: 0
-      margin-bottom: 0
-      flex-basis: 30%
-      img
-        border-radius: 50px
-    .name
-      flex-basis: 70%
-      dt
-        text-align: center
+      margin: 1rem auto 0
+      width: 6rem
+      height: .5rem
+      background: linear-gradient(45deg, $pale_violet, $pale_blue)
+
+    .discord_link
+      a
+        display: block
+        padding: 1rem
+        border-radius: .5rem
+        background: $discord_blue
+        font-size: $size-5
         font-weight: bold
-      dd
-        margin-left: 0
+        color: #fff
         text-align: center
+        text-decoration: none
+
+    .member
+      display: flex
+      flex-direction: row
+      align-items: center
+      margin: 0 2rem
+      padding-bottom: 2rem
+
+      &:last-child
+        padding-bottom: 0
+
+      .avater
+        margin-right: 0
+        margin-left: 0
+        margin-bottom: 0
+        flex-basis: 30%
+        img
+          border-radius: 400px
+
+      .name
+        flex-basis: 70%
+        dt
+          text-align: center
+          font-weight: bold
+        dd
+          margin-left: 0
+          text-align: center
+
+@media (min-width: $tablet_and_laptop)
+  .logo
+    width: 24rem
+    margin-right: auto
+    margin-left: auto
+
+  .page
+    max-width: 48rem
+    margin-right: auto
+    margin-left: auto
+
+  .content
+    .discord_link
+      width: 24rem
+      margin-right: auto
+      margin-left: auto
+
+    .administrator
+      width: 24rem;
+      margin-right: auto
+      margin-left: auto
