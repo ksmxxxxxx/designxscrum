@@ -32,6 +32,7 @@
     "eleventy-plugin-sass": "^1.2.0",
     "eslint": "^7.29.0",
     "eslint-config-standard": "^16.0.3",
+    "netlify-cli": "^3.38.10",
     "pug": "^3.0.2"
   }
 }
