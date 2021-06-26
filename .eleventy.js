@@ -2,6 +2,7 @@ const pluginSass = require('eleventy-plugin-sass')
 const pug = require('pug')
 
 module.exports = function (eleventyConfig) {
+  eleventyConfig.addPassthroughCopy('_sources/images')
   eleventyConfig.setLibrary('pug', pug)
   eleventyConfig.addPlugin(pluginSass, {
     autoprefixer: true,
