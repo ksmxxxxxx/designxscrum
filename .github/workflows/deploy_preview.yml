@@ -1,4 +1,4 @@
-name: Netlify Deploy Preview
+name: Deploy Preview
 on:
   push:
     branches-ignore:

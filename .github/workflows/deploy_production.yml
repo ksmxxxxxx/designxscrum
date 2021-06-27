@@ -1,4 +1,4 @@
-name: Netlify Deploy to Production
+name: Deploy to Production
 on:
   push:
     branches:
@@ -22,7 +22,7 @@ jobs:
       - name: Build with 11ty
         run: npm run build
 
-      - name: Deploy Preview
+      - name: Deploy to Production
         run: npx netlify deploy --prod -d _site -a ${NETLIFY_AUTH_TOKEN} -s ${NETLIFY_SITE_ID}
         env:
           NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
