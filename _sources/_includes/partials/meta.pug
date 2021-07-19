@@ -4,14 +4,14 @@ meta(name='viewport' content='width=device-width, initial-scale=1')
 meta(proparty='og:title' content=site.title)
 meta(proparty='og:type' content='website')
 meta(property='og:description' content=site.description)
-meta(property='og:url' content=page.url)
-meta(property='og:image' content='images/3x/logo_large@3x.png')
+meta(property='og:url' content=site.url)
+meta(property='og:image' content=`${site.url}/images/3x/logo_large@3x.png`)
 
-meta(name='twitter:card' content='summary')
+meta(name='twitter:card' content='summary_large_image')
 meta(name='twitter:title' content=site.title)
 meta(name='twitter:description' content=site.description)
 meta(name='twitter:site' content=site.author.twitterid)
-meta(name='twitter:image' content='images/3x/logo_large@3x.png')
+meta(name='twitter:image' content=`${site.url}/images/3x/logo_large@3x.png`)
 meta(name='twitter:image:alt' content=site.title)
 
 title
@@ -19,4 +19,3 @@ title
 
 meta(name='description' content=site.description)
 meta(name='author' content=site.author.name)
-meta(name='robots' content='noindex')
